@@ -43,36 +43,134 @@ URxvt*scrollTtyKeypress:    true
 !URxvt.url-launcher: /usr/bin/firefox
 !URxvt.matcher.button: 1
 
-! Colors
-URxvt.depth: 24
-
-! hard contrast: *background: #1d2021
-*background: #282828
-! soft contrast: *background: #32302f
-*foreground: #ebdbb2
-! Black + DarkGrey
-*color0:  #282828
-*color8:  #928374
-! DarkRed + Red
-*color1:  #cc241d
-*color9:  #fb4934
-! DarkGreen + Green
-*color2:  #98971a
-*color10: #b8bb26
-! DarkYellow + Yellow
-*color3:  #d79921
-*color11: #fabd2f
-! DarkBlue + Blue
-*color4:  #458588
-*color12: #83a598
-! DarkMagenta + Magenta
-*color5:  #b16286
-*color13: #d3869b
-! DarkCyan + Cyan
-*color6:  #689d6a
-*color14: #8ec07c
-! LightGrey + White
-*color7:  #a89984
-*color15: #ebdbb2
-
 rofi.highlightbg: #676d3d
+
+! Colors
+!URxvt.depth: 24
+
+!! hard contrast: *background: #1d2021
+!*background: #282828
+!! soft contrast: *background: #32302f
+!*foreground: #ebdbb2
+!! Black + DarkGrey
+!*color0:  #282828
+!*color8:  #928374
+!! DarkRed + Red
+!*color1:  #cc241d
+!*color9:  #fb4934
+!! DarkGreen + Green
+!*color2:  #98971a
+!*color10: #b8bb26
+!! DarkYellow + Yellow
+!*color3:  #d79921
+!*color11: #fabd2f
+!! DarkBlue + Blue
+!*color4:  #458588
+!*color12: #83a598
+!! DarkMagenta + Magenta
+!*color5:  #b16286
+!*color13: #d3869b
+!! DarkCyan + Cyan
+!*color6:  #689d6a
+!*color14: #8ec07c
+!! LightGrey + White
+!*color7:  #a89984
+!*color15: #ebdbb2
+
+!#include "/home/yaroslav.sapozhnyk/xrdb/scheme.xrdb"
+
+!Rxvt*color0:       Ansi_0_Color
+!Rxvt*color1:       Ansi_1_Color
+!Rxvt*color2:       Ansi_2_Color
+!Rxvt*color3:       Ansi_3_Color
+!Rxvt*color4:       Ansi_4_Color
+!Rxvt*color5:       Ansi_5_Color
+!Rxvt*color6:       Ansi_6_Color
+!Rxvt*color7:       Ansi_7_Color
+!Rxvt*color8:       Ansi_8_Color
+!Rxvt*color9:       Ansi_9_Color
+!Rxvt*color10:      Ansi_10_Color
+!Rxvt*color11:      Ansi_11_Color
+!Rxvt*color12:      Ansi_12_Color
+!Rxvt*color13:      Ansi_13_Color
+!Rxvt*color14:      Ansi_14_Color
+!Rxvt*color15:      Ansi_15_Color
+!Rxvt*colorBD:      Bold_Color
+!Rxvt*colorIT:      Italic_Color
+!Rxvt*colorUL:      Underline_Color
+!Rxvt*foreground:   Foreground_Color
+!Rxvt*background:   Background_Color
+!Rxvt*cursorColor:  Cursor_Color
+
+!Tartan colours
+
+!urxvt color scheme:
+
+!URxvt*background: #2B2B2B
+!URxvt*foreground: #DEDEDE
+
+!URxvt*colorUL: #86a2b0
+
+!! black
+!URxvt*color0  : #2E3436
+!URxvt*color8  : #555753
+!! red
+!URxvt*color1  : #CC0000
+!URxvt*color9  : #EF2929
+!! green
+!URxvt*color2  : #4E9A06
+!URxvt*color10 : #8AE234
+!! yellow
+!URxvt*color3  : #C4A000
+!URxvt*color11 : #FCE94F
+!! blue
+!URxvt*color4  : #3465A4
+!URxvt*color12 : #729FCF
+!! magenta
+!URxvt*color5  : #75507B
+!URxvt*color13 : #AD7FA8
+!! cyan
+!URxvt*color6  : #06989A
+!URxvt*color14 : #34E2E2
+!! white
+!URxvt*color7  : #D3D7CF
+!URxvt*color15 : #EEEEEC
+
+!URxvt*cursorColor: #eb4509
+!===============================================
+*cursorColor:   #cee318
+
+*background:    #1C1C1C
+*foreground:    #c5c5c5
+
+! black
+*color0:        #1C1C1C
+*color8:        #666666
+
+! red
+*color1:        #ff005b
+*color9:        #ff00a0
+
+! green
+*color2:        #cee318
+*color10:       #ccff00
+
+! yellow
+*color3:        #ffe755
+*color11:       #ff9f00
+
+! blue
+*color4:        #048ac7
+*color12:       #48c6ff
+
+! magenta
+*color5:        #833c9f
+*color13:       #be67e1
+
+! cyan 
+*color6:        #0ac1cd
+*color14:       #63e7f0
+
+! white
+*color7:        #e5e5e5
+*color15:       #f3f3f3
