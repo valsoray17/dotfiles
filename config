@@ -200,12 +200,6 @@ bindsym XF86MonBrightnessUp exec xbacklight -inc 20 # increase screen brightness
 bindsym XF86MonBrightnessDown exec xbacklight -dec 20 # decrease screen brightness
 
 exec --no-startup-id /usr/bin/parcellite
-<<<<<<< HEAD
-<<<<<<< HEAD
 
-workspace 1 output eDP1
-workspace 2 output eDP1
-=======
->>>>>>> 9539041c41c8b977639824fc6868d326e0fd885c
-=======
->>>>>>> 9539041c41c8b977639824fc6868d326e0fd885c
+workspace 1 output LVDS1
+workspace 2 output LVDS1
