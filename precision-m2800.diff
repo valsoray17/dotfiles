@@ -1,0 +1,2 @@
+CPU_temp_path: /sys/devices/platform/coretemp.0/hwmon/hwmon3/temp1_input
+screen_output: eDP1

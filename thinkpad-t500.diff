@@ -1,0 +1,2 @@
+CPU_temp_path: /sys/devices/platform/coretemp.0/hwmon/hwmon2/temp2_input
+screen_output: LVDS1
