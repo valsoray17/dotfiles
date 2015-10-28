@@ -16,8 +16,6 @@ Xft.lcdfilter: lcddefault
 Xft.hinting: 1
 Xft.hintstyle: hintfull
 
-URxvt.depth: 32
-
 ! Clickable links
 URxvt.perl-ext-common: default,matcher,resize-font
 URxvt.url-launcher: /usr/bin/firefox
@@ -94,8 +92,4 @@ URxvt.depth: 24
 ! white
 *.color7:       #707880
 *.color15:      #c5c8c6
-
-URxvt.colorBD: #B5BD68
-URxvt.colorIT: #B294BB
-URxvt.colorUL: #81A2BE
 
