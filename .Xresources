@@ -8,6 +8,16 @@ URxvt.keysym.End: \033[4~
 URxvt.keysym.KP_Home: \033[1~
 URxvt.keysym.KP_End:  \033[4~
 
+Xft.dpi: 96
+Xft.antialias: 1
+Xft.rgba: rgb
+Xft.autohint: 0
+Xft.lcdfilter: lcddefault
+Xft.hinting: 1
+Xft.hintstyle: hintfull
+
+URxvt.depth: 32
+
 ! Clickable links
 URxvt.perl-ext-common: default,matcher,resize-font
 URxvt.url-launcher: /usr/bin/firefox
@@ -20,7 +30,7 @@ URxvt*resize-font.bigger: C-Up
 URxvt*termName: xterm-256color
 
 ! Font settings
-URxvt.font: xft:Inconsolata:medium:pixelsize=12:antialias=true:hinting=true
+URxvt.font: xft:DejaVu Sans Mono:medium:size=9:antialias=true:hinting=true
 URxvt.letterSpace: -1
 
 ! Scrollbar
@@ -138,39 +148,39 @@ rofi.highlightbg: #676d3d
 
 !URxvt*cursorColor: #eb4509
 !===============================================
-*cursorColor:   #cee318
+URxvt.colorBD: #B5BD68
+URxvt.colorIT: #B294BB
+URxvt.colorUL: #81A2BE
 
-*background:    #1C1C1C
-*foreground:    #c5c5c5
+! Hybrid Terminal Colours. Uses the palette from Tomorrow-Night:
+! https://github.com/chriskempson/tomorrow-theme/blob/master/vim/colors/Tomorrow-Night.vim
+! vim: ft=xdefaults
+
+*background: #1D1F21
+*foreground: #C5C8C6
+*cursorColor: #C3FF00
 
 ! black
-*color0:        #1C1C1C
-*color8:        #666666
-
+*color0: #282A2E
+*color8: #373B41
 ! red
-*color1:        #ff005b
-*color9:        #ff00a0
-
+*color1: #A54242
+*color9: #CC6666
 ! green
-*color2:        #cee318
-*color10:       #ccff00
-
+*color2: #8C9440
+*color10: #B5BD68
 ! yellow
-*color3:        #ffe755
-*color11:       #ff9f00
-
+*color3: #DE935F
+*color11: #F0C674
 ! blue
-*color4:        #048ac7
-*color12:       #48c6ff
-
+*color4: #5F819D
+*color12: #81A2BE
 ! magenta
-*color5:        #833c9f
-*color13:       #be67e1
-
-! cyan 
-*color6:        #0ac1cd
-*color14:       #63e7f0
-
+*color5: #85678F
+*color13: #B294BB
+! cyan
+*color6: #5E8D87
+*color14: #8ABEB7
 ! white
-*color7:        #e5e5e5
-*color15:       #f3f3f3
+*color7: #707880
+*color15: #C5C8C6
