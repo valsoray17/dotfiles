@@ -174,7 +174,7 @@ bindsym $mod+x move workspace to output right
 
 set $locker i3lock -c 4A4747 && sleep 1
 
-set $mode_system System (l) lock, (e) logout, (s) suspend, (h) hibernate, (r) reboot, (Shift+s) shutdown
+set $mode_system System lock (l), logout (e), suspend (s), hibernate (h), reboot (r), shutdown (Shift+s) 
 mode "$mode_system" {
     bindsym l exec --no-startup-id $locker, mode "default"
     bindsym e exec --no-startup-id i3-msg exit, mode "default"
