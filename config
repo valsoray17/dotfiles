@@ -189,7 +189,7 @@ mode "$mode_system" {
 }
 bindsym $mod+Pause mode "$mode_system"
 
-bindsym $mod+l exec $locker
+bindsym $mod+l exec --no-startup-id $locker
 
 # Pulse Audio controls
 # Decrease Volume
@@ -211,7 +211,7 @@ workspace 1 output eDP1
 workspace 2 output eDP1
 
 # Window colors         border  backgr. text    indicator
-lient.focused          #204A8C #204A8C #ffffff #3F6094
+client.focused          #204A8C #204A8C #ffffff #3F6094
 #client.focused_inactive #888888 #2b2b2b #ffffff #2b2b2b
 #client.unfocused        #888888 #2b2b2b #ffffff #2b2b2b
 #client.urgent           #900000 #900000 #ffffff #2b2b2b
