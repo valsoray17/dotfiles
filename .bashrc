@@ -12,7 +12,8 @@ fi
 source /usr/share/git-core/contrib/completion/git-prompt.sh
 
 #PS1='[\u@\h \W]$(__git_ps1 " (%s)")\$ '  # Default
+export GIT_PS1_SHOWCOLORHINTS=1
+export GIT_PS1_SHOWUNTRACKEDFILES=1
+
 PROMPT_COMMAND='__git_ps1 "[\u@\h \W"] "\\\$ "'
-export GIT_PS1_SHOWCOLORHINTS=true
-export GIT_PS1_SHOWUNTRACKEDFILES=true
 
