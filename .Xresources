@@ -1,6 +1,7 @@
 ! Rofi related configs
 rofi.lines: 5
 rofi.opacity: 90
+rofi.location: 2
 
 ! Ctrl+Arrows/Home End Navigation
 URxvt.keysym.Control-Up:   \033[1;5A
