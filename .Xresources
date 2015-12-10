@@ -1,3 +1,7 @@
+! Rofi related configs
+rofi.lines: 5
+rofi.opacity: 90
+
 ! Ctrl+Arrows/Home End Navigation
 URxvt.keysym.Control-Up:   \033[1;5A
 URxvt.keysym.Control-Down:    \033[1;5B
@@ -26,6 +30,7 @@ URxvt*saveLines: 10000
 URxvt*resize-font.smaller: C-Down
 URxvt*resize-font.bigger: C-Up
 URxvt*termName: xterm-256color
+!URxvt*cursorBlink: true
 
 ! Font settings
 URxvt.font: xft:DejaVu Sans Mono:medium:size=9:antialias=true:hinting=true
@@ -85,3 +90,4 @@ URxvt.depth: 24
 ! white
 *.color7:       #a2a2a2
 *.color15:      #f9f9f9
+
