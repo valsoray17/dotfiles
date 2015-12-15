@@ -17,7 +17,7 @@ font pango:monospace 8
 
 # This font is widely installed, provides lots of unicode glyphs, right-to-left
 # text rendering and scalability on retina/hidpi displays (thanks to pango).
-#font pango:DejaVu Sans Mono 8
+#font pango:DejaVu Sans Mono 12
 
 # Before i3 v4.8, we used to recommend this one as the default:
 # font -misc-fixed-medium-r-normal--13-120-75-75-C-70-iso10646-1
@@ -165,6 +165,7 @@ bar {
         status_command i3status
 	tray_output eDP1
 	font pango:DejaVu Sans Mono, FontAwesome 8
+	position top
 
 	colors {
 #	        background #000000
@@ -172,7 +173,7 @@ bar {
 		background #222222
         	#statusline #ffffff
 
-	        focused_workspace  #5B7BAE #204A8C #ffffff
+	        focused_workspace  #204A8C #204A8C #ffffff
         	#active_workspace   #ffffff #333333
 	        #inactive_workspace #888888 #222222
         	#urgent_workspace   #ffffff #900000
@@ -232,3 +233,7 @@ client.focused          #204A8C #204A8C #ffffff #3F6094
 #client.urgent           #900000 #900000 #ffffff #2b2b2b
 
 exec --no-startup-id compton
+
+for_window [class="^.*"] border pixel 2
+#gaps inner 10
+#smart_gaps on
