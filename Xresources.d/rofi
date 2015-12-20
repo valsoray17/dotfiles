@@ -1,0 +1,9 @@
+! Rofi related configs
+rofi.lines: 5
+rofi.opacity: 90
+rofi.location: 2
+rofi.bg: #222222
+rofi.separator-style: solid
+rofi.highlightbg: #676d3d
+rofi.width: 30
+

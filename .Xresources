@@ -1,21 +1,6 @@
-! Rofi related configs
-rofi.lines: 5
-rofi.opacity: 90
-rofi.location: 2
-rofi.bg: #222222
-rofi.separator-style: solid
-rofi.highlightbg: #676d3d
-rofi.width: 30
-
-! Ctrl+Arrows/Home End Navigation
-URxvt.keysym.Control-Up:   \033[1;5A
-URxvt.keysym.Control-Down:    \033[1;5B
-URxvt.keysym.Control-Left:    \033[1;5D
-URxvt.keysym.Control-Right:    \033[1;5C
-URxvt.keysym.Home: \033[1~
-URxvt.keysym.End: \033[4~
-URxvt.keysym.KP_Home: \033[1~
-URxvt.keysym.KP_End:  \033[4~
+#include "Xresources.d/colors"
+#include "Xresources.d/urxvt"
+#include "Xresources.d/rofi"
 
 Xft.dpi: 96
 Xft.antialias: 1
@@ -25,72 +10,33 @@ Xft.lcdfilter: lcddefault
 Xft.hinting: 1
 Xft.hintstyle: hintfull
 
-! Clickable links
-URxvt.perl-ext-common: default,matcher,resize-font
-URxvt.url-launcher: /usr/bin/firefox
-URxvt.matcher.button: 1
-
-! General Settings
-URxvt*saveLines: 10000
-URxvt*resize-font.smaller: C-Down
-URxvt*resize-font.bigger: C-Up
-URxvt*termName: xterm-256color
-!URxvt*cursorBlink: true
-
-! Font settings
-URxvt.font: xft:DejaVu Sans Mono:medium:size=9:antialias=true:hinting=true
-URxvt.letterSpace: -1
-
-! Scrollbar
-URxvt.scrollBar: false
-!URxvt.scrollBar_right: true
-!URxvt.scrollstyle: plain
-!URxvt.scrollColor: #2d2d2d
-
-! Scroll Lock
-URxvt*scrollTtyOutput:      false
-URxvt*scrollWithBuffer:     true
-URxvt*scrollTtyKeypress:    true
-
-! Transparency
-!URxvt.transparent: true
-!URxvt.shading: 9
-
-! Clickable links
-!URxvt.perl-ext-common: default,matcher,resize-font
-!URxvt.url-launcher: /usr/bin/firefox
-!URxvt.matcher.button: 1
-
-! Colors
-URxvt.depth: 24
-
 ! special
-*.foreground:   #c5c8c6
-*.background:   #1d1f21
-*.cursorColor:  #c3ff00
+*.foreground:   foreground_color 
+*.background:   background_color
+*.cursorColor:  cursor_color
 
 ! black
-*.color0:       #555555
-*.color8:       #888888
+*.color0:       _color0
+*.color8:       _color8
 ! red
-*.color1:       #9c3528
-*.color9:       #d64937
+*.color1:       _color1
+*.color9:       _color9
 ! green
-*.color2:       #61bc3b
-*.color10:      #86df5d
+*.color2:       _color2
+*.color10:      _color10
 ! yellow
-*.color3:       #f3b43a
-*.color11:      #fdd75a
+*.color3:       _color3
+*.color11:      _color11
 ! blue
-*.color4:       #0d68a8
-*.color12:      #0f75bd
+*.color4:       _color4
+*.color12:      _color12
 ! magenta
-*.color5:       #744560
-*.color13:      #9e5e83
+*.color5:       _color5
+*.color13:      _color13
 ! cyan
-*.color6:       #288e9c
-*.color14:      #37c3d6
+*.color6:       _color6
+*.color14:      _color14
 ! white
-*.color7:       #a2a2a2
-*.color15:      #f9f9f9
+*.color7:       _color7
+*.color15:      _color15
 
