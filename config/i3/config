@@ -167,7 +167,6 @@ mode "resize" {
 bindsym $mod+r mode "resize"
 
 set $main_output LVDS1
-#set $main_output eDP1
 
 set $bg_color #222222
 set $focused_bg_color #204A8C
