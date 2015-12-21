@@ -249,7 +249,9 @@ client.focused          #204A8C #204A8C #ffffff #3F6094
 
 exec --no-startup-id compton
 
-for_window [class="^.*"] border pixel 2
+set $border_size 2
+new_window pixel $border_size
+for_window [class="^.*"] border pixel $border_size
 for_window [class="kpat"] floating enable
 for_window [class="^NC$"] floating enable
 assign [class="^NC$"] 10
