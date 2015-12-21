@@ -18,3 +18,6 @@ GIT_PS1_SHOWDIRTYSTATE=1
 
 PROMPT_COMMAND='__git_ps1 "[\u@\h \W"] "\\\$ "'
 
+if [ -f ~/.bashrc_local ]; then
+	source ~/.bashrc_local
+fi
