@@ -11,7 +11,7 @@ general {
         interval = 3
 	color_bad = "#d64937"
 	color_degraded = "#f3b43a"
-	color_good = "#86df5d"
+	color_good = "#2D9EF4"
 }
 
 #order += "ipv6"
