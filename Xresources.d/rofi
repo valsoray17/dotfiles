@@ -2,8 +2,14 @@
 rofi.lines: 5
 rofi.opacity: 90
 rofi.location: 2
-rofi.bg: #222222
+!rofi.bg: #222222
 rofi.separator-style: solid
-rofi.highlightbg: #676d3d
+!rofi.highlightbg: #676d3d
 rofi.width: 30
+
+rofi.color-enabled: true
+rofi.color-window: #393939, #393939, #268bd2
+rofi.color-normal: #393939, #ffffff, #393939, #268bd2, #ffffff
+rofi.color-active: #393939, #268bd2, #393939, #268bd2, #205171
+rofi.color-urgent: #393939, #f3843d, #393939, #268bd2, #ffc39c
 
