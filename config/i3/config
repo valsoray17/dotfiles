@@ -254,7 +254,8 @@ new_window pixel $border_size
 for_window [class="^.*"] border pixel $border_size
 for_window [class="kpat"] floating enable
 for_window [class="^NC$"] floating enable
-assign [class="^NC$"] 10
+assign [class="^NC$"] $ws10
+assign [instance="skype"] $ws10
 
 #gaps inner 10
 #smart_gaps on
