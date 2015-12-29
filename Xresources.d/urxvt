@@ -22,7 +22,7 @@ URxvt*termName: xterm-256color
 
 ! Font settings
 URxvt.font: xft:DejaVu Sans Mono:medium:size=9:antialias=true:hinting=true
-URxvt.letterSpace: -1
+URxvt.letterSpace: -2
 
 ! Scrollbar
 URxvt.scrollBar: false
