@@ -21,3 +21,6 @@ PROMPT_COMMAND='__git_ps1 "[\u@\h \W"] "\\\$ "'
 if [ -f ~/.bashrc_local ]; then
 	. ~/.bashrc_local
 fi
+
+#Expand directory variables
+shopt -s direxpand
