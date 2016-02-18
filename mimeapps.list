@@ -12,4 +12,5 @@ x-scheme-handler/unknown=google-chrome.desktop
 x-scheme-handler/mailto=google-chrome.desktop
 image/jpeg=gwenview.desktop
 image/jpg=gwenview.desktop
+image/png=gwenview.desktop
 application/pdf=okular.desktop
