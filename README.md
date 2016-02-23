@@ -15,4 +15,5 @@ Current dotfiles cover Fedora distro
 * Setup feh
 * Fonts
  * [System San Francisco Display](https://github.com/supermarin/YosemiteSanFranciscoFont)
- * [Font Awesome](https://fortawesome.github.io/Font-Awesome/)
+ * [Font Awesome](https://fortawesome.github.io/Font-Awesome/)   
+* Add i3lock systemd service!
