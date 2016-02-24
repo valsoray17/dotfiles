@@ -1,0 +1,16 @@
+[Added Associations]
+application/xml=kwrite.desktop;kde4-kwrite.desktop;kde4-kfmclient_html.desktop;google-chrome.desktop;firefox.desktop;libreoffice-writer.desktop;kde4-okularApplication_txt.desktop;kde4-calligrawords_ascii.desktop;
+text/html=google-chrome.desktop
+text/plain=org.kde.kwrite.desktop;org.kde.kate.desktop;libreoffice-writer.desktop;kde4-okularApplication_txt.desktop;kde4-calligrawords_ascii.desktop;
+
+[Default Applications]
+text/html=google-chrome.desktop
+x-scheme-handler/http=google-chrome.desktop
+x-scheme-handler/https=google-chrome.desktop
+x-scheme-handler/about=google-chrome.desktop
+x-scheme-handler/unknown=google-chrome.desktop
+x-scheme-handler/mailto=google-chrome.desktop
+image/jpeg=gwenview.desktop
+image/jpg=gwenview.desktop
+application/pdf=okular.desktop
+image/png=gwenview.desktop

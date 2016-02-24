@@ -16,7 +16,7 @@ GIT_PS1_SHOWCOLORHINTS=1
 GIT_PS1_SHOWUNTRACKEDFILES=1
 GIT_PS1_SHOWDIRTYSTATE=1
 
-PROMPT_COMMAND='__git_ps1 "[\u@\h \W"] "\\\$ "'
+PROMPT_COMMAND='__git_ps1 "[\[\e[0;33m\]\u\[\e[0;m\]@\h \W"] "\\\$ "'
 
 if [ -f ~/.bashrc_local ]; then
 	. ~/.bashrc_local
