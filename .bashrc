@@ -24,3 +24,5 @@ fi
 
 #Expand directory variables
 shopt -s direxpand
+
+alias upgrade="sudo dnf upgrade --refresh"
