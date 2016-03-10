@@ -252,14 +252,14 @@ workspace $ws1 output $main_output
 workspace $ws2 output $main_output
 
 # Window colors          border  backgr. text    indicator
-client.focused           #0d68a8 #0d68a8 #ffffff #0d68a8
+client.focused           #ff9800 #ff9800 #101010 #ff9800
 #client.focused_inactive #888888 #2b2b2b #ffffff #2b2b2b
 client.unfocused         #888888 #2b2b2b #ffffff #2b2b2b
 #client.urgent           #900000 #900000 #ffffff #2b2b2b
 
 exec --no-startup-id compton
 
-set $border_size 4
+set $border_size 2
 new_window pixel $border_size
 for_window [class="^.*"] border pixel $border_size
 for_window [class="kpat"] floating enable
