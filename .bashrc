@@ -26,3 +26,4 @@ fi
 shopt -s direxpand
 
 alias upgrade="sudo dnf upgrade --refresh"
+
