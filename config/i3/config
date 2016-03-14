@@ -178,11 +178,12 @@ bindsym $mod+r mode "resize"
 set $main_output LVDS1
 
 #set $bg_color #222222
-set $bg_color #2B2B2B
-set $focused_bg_color #204A8C
+set $bg_color #232323
+set $focused_bg_color #232323
 set $text_color #ffffff
+set $focused_text_color #ff9000
 set $active_bg_color #333333
-set $inactive_bg_color #2B2B2B
+set $inactive_bg_color #232323
 set $inactive_text_color #888888
 set $urgent_bg_color #d64937
 
@@ -196,7 +197,7 @@ bar {
 	colors {
 		background $bg_color
 
-		focused_workspace  $focused_bg_color $focused_bg_color $text_color
+		focused_workspace  $focused_bg_color $focused_bg_color $focused_text_color
         	active_workspace   $active_bg_color $active_bg_color $text_color
 	        inactive_workspace $inactive_bg_color $inactive_bg_color $inactive_text_color
 	       	urgent_workspace   $urgent_bg_color $urgent_bg_color $text_color
