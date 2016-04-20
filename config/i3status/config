@@ -40,7 +40,7 @@ ethernet _first_ {
 }
 
 battery 0 {
-        format = "%status %percentage %remaining"
+        format = " %status %percentage %remaining"
 }
 
 run_watch DHCP {
@@ -78,8 +78,8 @@ cpu_temperature 0 {
 }
 
 volume master {
-        format = "♪: %volume"
-        format_muted = "♪: muted (%volume)"
+        format = " %volume"
+        format_muted = " muted (%volume)"
         device = "default"
         mixer = "Master"
         mixer_idx = 0
