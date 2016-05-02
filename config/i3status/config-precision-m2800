@@ -74,7 +74,7 @@ disk "/home" {
 cpu_temperature 0 {
 	format = "T: %degrees °C"
 	#Precision M2800
-        path = "/sys/devices/platform/coretemp.0/hwmon/hwmon3/temp1_input"
+        path = "/sys/devices/platform/coretemp.0/hwmon/hwmon2/temp1_input"
 }
 
 volume master {
