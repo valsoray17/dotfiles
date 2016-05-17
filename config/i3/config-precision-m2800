@@ -275,3 +275,5 @@ assign [instance="skype"] $ws10
 
 gaps inner 12
 smart_gaps on
+
+bindsym Print exec ksnapshot
