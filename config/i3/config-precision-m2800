@@ -116,8 +116,8 @@ set $ws5 "5"
 set $ws6 "6"
 set $ws7 "7"
 set $ws8 "8"
-set $ws9 "9"
-set $ws10 "10"
+set $ws9 "9:"
+set $ws10 "10:"
 
 # switch to workspace
 bindsym $mod+1 workspace $ws1
@@ -193,6 +193,7 @@ set $urgent_bg_color #d64937
 bar {
         status_command i3status
 	tray_output $main_output
+	strip_workspace_numbers yes
 	
 	position top
 	colors {
