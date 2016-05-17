@@ -183,7 +183,7 @@ set $bg_color #232323
 set $focused_bg_color #232323
 set $text_color #ffffff
 set $focused_text_color #ff9000
-set $active_bg_color #333333
+set $active_bg_color #232323
 set $inactive_bg_color #232323
 set $inactive_text_color #888888
 set $urgent_bg_color #d64937
