@@ -6,6 +6,7 @@ rofi.location: 2
 rofi.separator-style: solid
 !rofi.highlightbg: #676d3d
 rofi.width: 30
+rofi.cycle:false
 
 rofi.color-enabled: true
 rofi.color-window: #393939, #393939, #268bd2
