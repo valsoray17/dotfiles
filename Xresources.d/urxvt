@@ -31,6 +31,7 @@ URxvt.scrollBar: false
 !URxvt.scrollColor: #2d2d2d
 URxvt.secondaryScreen: 1
 URxvt.secondaryScroll: 0
+URxvt.secondaryWheel: 1
 
 ! Scroll Lock
 URxvt*scrollTtyOutput:      false
