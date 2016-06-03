@@ -12,6 +12,7 @@ Current dotfiles cover Fedora distro
  * pactl
  * xbacklight
  * parcellite
+ * sudo dnf group install 'Development Tools'
 * Setup feh
 * Fonts
  * [System San Francisco Display](https://github.com/supermarin/YosemiteSanFranciscoFont)
