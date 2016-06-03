@@ -12,6 +12,7 @@ Current dotfiles cover Fedora distro
  * pactl
  * xbacklight
  * parcellite
+ * urxvt (rxvt-unicode-256color.x86_64)
  * sudo dnf group install 'Development Tools'
  * sudo dnf groupinstall "C Development Tools and Libraries"
 * Setup feh
