@@ -17,3 +17,5 @@ Current dotfiles cover Fedora distro
  * [System San Francisco Display](https://github.com/supermarin/YosemiteSanFranciscoFont)
  * [Font Awesome](https://fortawesome.github.io/Font-Awesome/)   
 * Add i3lock systemd service!
+* Repos
+ * [RPM Fusion](http://rpmfusion.org/Configuration/)
