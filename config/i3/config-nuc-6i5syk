@@ -176,7 +176,7 @@ mode "resize" {
 
 bindsym $mod+r mode "resize"
 
-set $main_output HDMI1
+set $main_output HDMI-1
 
 #set $bg_color #222222
 set $bg_color #232323
