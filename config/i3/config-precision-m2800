@@ -253,6 +253,7 @@ exec --no-startup-id /usr/bin/parcellite
 
 workspace $ws1 output $main_output
 workspace $ws2 output $main_output
+workspace $ws6 output $main_output
 
 # Window colors         border  backgr. text    indicator
 client.focused           #ff9800 #ff9800 #101010 #ff9800
@@ -272,6 +273,7 @@ for_window [class="Pavucontrol"] floating enable
 
 assign [class="^NC$"] $ws10
 assign [instance="skype"] $ws10
+assign [class="VirtualBox"] $ws6
 
 gaps inner 12
 smart_gaps on
