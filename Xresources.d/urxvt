@@ -21,8 +21,9 @@ URxvt*termName: xterm-256color
 !URxvt*cursorBlink: true
 
 ! Font settings
-URxvt.font: xft:DejaVu Sans Mono:medium:size=9:antialias=true:hinting=true
-URxvt.letterSpace: -2
+!URxvt.font: xft:DejaVu Sans Mono:medium:size=9:antialias=true:hinting=true
+URxvt.font: xft:Ubuntu Mono:medium:pixelsize=14:antialias=true:hinting=true
+URxvt.letterSpace:-1
 
 ! Scrollbar
 URxvt.scrollBar: false
