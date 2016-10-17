@@ -26,4 +26,4 @@ fi
 shopt -s direxpand
 
 alias upgrade="sudo dnf upgrade --refresh"
-
+alias unix="curl -L git.io/unix"
