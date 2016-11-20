@@ -252,9 +252,9 @@ bindsym $mod+F7 exec --no-startup-id pactl set-sink-volume @DEFAULT_SINK@ +5%
 bindsym XF86AudioMute exec --no-startup-id pactl set-sink-mute @DEFAULT_SINK@ toggle
 bindsym $mod+F8 exec --no-startup-id pactl set-sink-mute @DEFAULT_SINK@ toggle
 # Set Analog Profile
-bindsym $mod+F9 exec --no-startup-id pactl set-card-profile 0 output:analog-stereo
+bindsym $mod+F9 exec --no-startup-id pactl set-card-profile 0 output:analog-stereo+input:analog-stereo
 # Set HDMI Stereo
-bindsym $mod+F10 exec --no-startup-id pactl set-card-profile 0 output:hdmi-stereo
+bindsym $mod+F10 exec --no-startup-id pactl set-card-profile 0 output:hdmi-stereo+input:analog-stereo
 
 
 # focus urgent
