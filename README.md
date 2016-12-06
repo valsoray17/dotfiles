@@ -54,3 +54,6 @@ Current dotfiles cover Fedora distro
  </match>
 </fontconfig>
 ```
+
+##URxvt
+* [urxvt-resize-font](https://github.com/simmel/urxvt-resize-font)
