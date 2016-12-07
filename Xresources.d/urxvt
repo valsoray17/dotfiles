@@ -23,7 +23,7 @@ URxvt*termName: xterm-256color
 ! Font settings
 !URxvt.font: xft:DejaVu Sans Mono:medium:size=9:antialias=true:hinting=true
 URxvt.font: xft:Ubuntu Mono:medium:pixelsize=14:antialias=true:hinting=true
-!URxvt.letterSpace:-1
+URxvt.letterSpace:-1
 
 !Resize Font bindings
 URxvt.keysym.C-Down: resize-font:smaller
