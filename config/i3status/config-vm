@@ -60,7 +60,7 @@ tztime local {
 }
 
 load {
-        format = "CPU %1min"
+        format = " %1min"
 }
 
 disk "/" {
