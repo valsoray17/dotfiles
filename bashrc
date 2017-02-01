@@ -29,6 +29,10 @@ alias upgrade="sudo dnf upgrade --refresh"
 alias unix="curl -L git.io/unix"
 stty -ixon
 
+#Maven Stuff
 export M2_HOME=/opt/apache/apache-maven-3.3.9
 export M2=$M2_HOME/bin
 export PATH=$PATH:$HOME/bin:$M2
+mvnp(){
+	mvn ${@%${!#}} -pl ${!#} -am
+};
