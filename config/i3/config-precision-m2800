@@ -51,7 +51,7 @@ bindsym $mod+F3 exec $calc
 bindsym $mod+Shift+q kill
 
 #start rofi (a program launcher)
-bindsym $mod+d exec rofi -show run
+bindsym $mod+r exec rofi -show run
 
 # There also is the (new) i3-dmenu-desktop which only displays applications
 # shipping a .desktop file. It is a wrapper around dmenu, so you need that
@@ -185,7 +185,7 @@ mode "resize" {
         bindsym Escape mode "default"
 }
 
-bindsym $mod+r mode "resize"
+bindsym $mod+z mode "resize"
 
 set $main_output eDP1
 
