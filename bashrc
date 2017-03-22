@@ -26,6 +26,7 @@ fi
 shopt -s direxpand
 
 alias upgrade="sudo dnf upgrade --refresh"
+alias matrix="cmatrix -abC white"
 stty -ixon
 
 #Maven Stuff
