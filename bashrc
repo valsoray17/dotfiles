@@ -31,7 +31,7 @@ alias space="du -hsx * | sort -rh | head -10"
 stty -ixon
 
 #Maven Stuff
-export M2_HOME=/opt/apache/apache-maven-3.3.9
+export M2_HOME=/opt/apache/apache-maven-3.5.0
 export M2=$M2_HOME/bin
 export PATH=$PATH:$HOME/bin:$M2
 mvnp(){
