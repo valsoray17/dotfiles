@@ -1,6 +1,9 @@
+.quote {
+        color: #232323;
+}
+
 body {
 	background-color: #232323;
-	color: #a06e6e !important;
 }
 
 div[class^="books"], div [class*="books"] {
