@@ -56,7 +56,7 @@ path_exists VPN {
 }
 
 tztime local {
-        format = "%a %Y-%m-%d %I:%M:%S%P"
+        format = " %a %m/%d/%Y Week %V %I:%M:%S%P"
 }
 
 load {
