@@ -1,7 +1,10 @@
 ! Colors
 ! Special
-#define foreground_color #c5c8c6
-#define background_color #232323
+#define foreground_color #d6d8d7
+!#define foreground_color #fcf5d7
+!#define foreground_color #c5c8c6
+#define background_color #282828
+!#define background_color #232323
 #define cursor_color	 #c3ff00
 
 ! black
