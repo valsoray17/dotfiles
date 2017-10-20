@@ -6,41 +6,40 @@
 !   ██ ░░██  ░██   ░██░░░░  ░░░░░██░██   ░██░██  ░██ ░██   ░██   ██░██░░░░  ░░░░░██ 
 !  ██   ░░██░███   ░░██████ ██████ ░░██████ ░░██████░███   ░░█████ ░░██████ ██████  
 ! ░░     ░░ ░░░     ░░░░░░ ░░░░░░   ░░░░░░   ░░░░░░ ░░░     ░░░░░   ░░░░░░ ░░░░░░   
-# COLDLAVA
-# nxll <nxll@teknik.io>
+! COLDLAVA
+! nxll <nxll@teknik.io>
 
-cursor="#817FA3"
-mouse_background="#57607A"
-mouse_foreground="#FEDDD0"
-highlight="#57607A"
-border="#3C4254"
-background="#3C4254"
-foreground="#FEDDD0"
+#define cursor_color #817FA3
+!mouse_background="#57607A"
+!mouse_foreground="#FEDDD0"
+!highlight="#57607A"
+!border="#3C4254"
+#define background_color #3C4254
 
 !*.background:#3C4254
-*.foreground:#FEDDD0
+#define foreground_color #FEDDD0
 
-#BLACK
-*.color0:#4B5269
-*.color8:#57607A
-#RED
-*.color1:#D8686D
-*.color9:#ED7278
-#GREEN
-*.color2:#918EB3
-*.color10:#A19EC7
-#YELLOW
-*.color3:#EBC6A1
-*.color11:#FFD7AF
-#BLUE
-*.color4:#B84E46
-*.color12:#CC564E
-#MAGENTA
-*.color5:#875F87
-*.color13:#9C6D9C
-#CYAN
-*.color6:#F77C6C
-*.color14:#FF806F
-#WHITE
-*.color7:#FDCBAC
-*.color15:#FDCBAC
+!BLACK
+#define _color0 #4B5269
+#define _color8 #57607A
+!RED
+#define _color1 #D8686D
+#define _color9 #ED7278
+!GREEN
+#define _color2 #918EB3
+#define _color10 #A19EC7
+!YELLOW
+#define _color3 #EBC6A1
+#define _color11 #FFD7AF
+!BLUE
+#define _color4 #B84E46
+#define _color12 #CC564E
+!MAGENTA
+#define _color5 #875F87
+#define _color13 #9C6D9C
+!CYAN
+#define _color6 #F77C6C
+#define _color14 #FF806F
+!WHITE
+#define _color7 #FDCBAC
+#define _color15 #FDCBAC
