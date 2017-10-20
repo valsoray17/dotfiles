@@ -190,13 +190,13 @@ bindsym $mod+r mode "resize"
 set $main_output VGA-1
 
 #set $bg_color #222222
-set $bg_color #232323
-set $focused_bg_color #232323
+set $bg_color #282828
+set $focused_bg_color #282828
 set $text_color #ffffff
 set $focused_text_color #ff9000
-set $active_bg_color #232323
-set $inactive_bg_color #232323
-set $inactive_text_color #888888
+set $active_bg_color #282828
+set $inactive_bg_color #282828
+set $inactive_text_color #d6d8d7
 set $urgent_bg_color #d64937
 
 # Start i3bar to display a workspace bar (plus the system information i3status
@@ -208,6 +208,7 @@ bar {
 	
 	position top
 	colors {
+                statusline $inactive_text_color
 		background $bg_color
 
 		focused_workspace  $focused_bg_color $focused_bg_color $focused_text_color
