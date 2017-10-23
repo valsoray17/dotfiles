@@ -1,0 +1,15 @@
+[credential]
+	helper = gnome-keyring
+[core]
+	autocrlf = input
+[user]
+	email = yaroslav.sapozhnik@gmail.com
+	name = Yaroslav Sapozhnyk
+[alias]
+	co = checkout
+	ci = commit
+	st = status
+	br = branch
+	lol = log --graph --decorate --oneline
+	unstage = reset HEAD --
+	last = log -1 HEAD
