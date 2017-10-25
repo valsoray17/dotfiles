@@ -43,6 +43,10 @@ else
   let &listchars = 'tab:> ,extends:>,precedes:<,nbsp:.'
 endif
 
+set runtimepath^=~/.vim/bundle/lightline.vim
+set noshowmode
+set ttimeoutlen=0
+
 " Put all temporary files under the same directory.
 " https://github.com/mhinz/vim-galore#handling-backup-swap-undo-and-viminfo-files
 "set backup
