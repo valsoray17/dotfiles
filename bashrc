@@ -33,7 +33,13 @@ stty -ixon
 #Maven Stuff
 export M2_HOME=/opt/apache/apache-maven-3.5.0
 export M2=$M2_HOME/bin
-export PATH=$PATH:$HOME/bin:$M2
 mvnp(){
 	mvn ${@%${!#}} -pl ${!#} -am
 };
+
+#Spring Stuff
+export SPRING_HOME=/opt/spring/spring-2.0.0.BUILD-SNAPSHOT
+export SPRING_BIN=$SPRING_HOME/bin
+
+#Export PATH
+export PATH=$PATH:$HOME/bin:$M2:$SPRING_BIN
