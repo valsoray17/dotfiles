@@ -25,9 +25,6 @@ fi
 #Expand directory variables
 shopt -s direxpand
 
-alias upgrade="sudo dnf upgrade --refresh"
-alias matrix="cmatrix -abC white"
-alias space="du -hsx * | sort -rh | head -10"
 stty -ixon
 
 #Maven Stuff
@@ -43,3 +40,17 @@ export SPRING_BIN=$SPRING_HOME/bin
 
 #Export PATH
 export PATH=$PATH:$HOME/bin:$M2:$SPRING_BIN
+
+# ALIASES
+alias upgrade='sudo dnf upgrade --refresh'
+alias matrix='cmatrix -abC white'
+alias space='du -hsx * | sort -rh | head -10'
+# Git Aliases
+alias gc='git commit'
+alias gca='git commit --amend'
+alias gp='git push'
+alias ga='git add'
+alias gbr='git branch'
+alias gd='git diff'
+alias gdc='git diff --cached'
+alias gst='git status'
