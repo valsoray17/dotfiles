@@ -59,3 +59,4 @@ Current dotfiles cover Fedora distro
 * [urxvt-resize-font](https://github.com/simmel/urxvt-resize-font)
 
 ##Git & libsecret
+There was an issue with git-credential-libsecret
