@@ -57,3 +57,5 @@ Current dotfiles cover Fedora distro
 
 ##URxvt
 * [urxvt-resize-font](https://github.com/simmel/urxvt-resize-font)
+
+##Git & libsecret
