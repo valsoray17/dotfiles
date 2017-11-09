@@ -12,7 +12,7 @@
 set $mod Mod4
 
 set $browser google-chrome
-set $calc kcalc
+set $calc xcalc
 
 # Font for window titles. Will also be used by the bar unless a different font
 # is used in the bar {} block below.
@@ -44,9 +44,10 @@ bindsym $mod+Return exec --no-startup-id urxvt256c
 
 # start a browser
 bindsym $mod+F2 exec $browser
+bindsym $mod+F3 exec firefox
 
 # start a calculator
-bindsym $mod+F3 exec $calc
+bindsym $mod+F4 exec $calc
 
 # kill focused window
 bindsym $mod+Shift+q kill
