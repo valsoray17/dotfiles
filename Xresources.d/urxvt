@@ -8,8 +8,11 @@ URxvt.keysym.End: \033[4~
 URxvt.keysym.KP_Home: \033[1~
 URxvt.keysym.KP_End:  \033[4~
 
+URxvt.keysym.Shift-Control-V: eval:paste_clipboard
+URxvt.keysym.Shift-Control-C: eval:selection_to_clipboard
+
 !Plugins
-URxvt.perl-ext-common: default,matcher,resize-font
+URxvt.perl-ext-common: default,matcher,resize-font,eval
 
 ! Clickable links
 URxvt.url-launcher: /usr/bin/firefox
