@@ -279,7 +279,7 @@ new_window pixel $border_size
 for_window [class="^.*"] border pixel $border_size
 for_window [class="kpat"] floating enable
 for_window [class="^NC$"] floating enable
-for_window [class="kcalc"] floating enable
+for_window [class="XCalc"] floating enable
 for_window [class="Pavucontrol"] floating enable
 
 assign [class="^NC$"] $ws10
