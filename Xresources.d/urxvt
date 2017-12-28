@@ -29,7 +29,7 @@ URxvt.font: xft:Ubuntu Mono:medium:pixelsize=14:antialias=true:hinting=true
 !URxvt.font: xft:Monoid:medium:pixelsize=12:style=Retina:antialias=true:hinting=true
 !URxvt.font: xft:Envy Code R:regular:pixelsize=14:antialias=true:hinting=true
 !URxvt.font: xft:M+ 1m:regular:pixelsize=14:antialias=true:hinting=true
-URxvt.letterSpace:-1
+!URxvt.letterSpace:-1
 
 !Resize Font bindings
 URxvt.keysym.C-Down: resize-font:smaller

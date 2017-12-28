@@ -49,10 +49,10 @@ set noshowmode " Don't show the current mode in Vim (lighline already show the m
 set ttimeoutlen=0 " The time in milliseconds that is waited for a key code or mapped key sequence to complete
 
 " Navigate buffer list
-nnoremap <silent> [b :brevious
-nnoremap <silent> ]b :bnext
-nnoremap <silent> [B :bfirst
-nnoremap <silent> ]B :blast
+nnoremap <silent> [b :bprevious<CR>
+nnoremap <silent> ]b :bnext<CR>
+nnoremap <silent> [B :bfirst<CR>
+nnoremap <silent> ]B :blast<CR>
 
 " Put all temporary files under the same directory.
 " https://github.com/mhinz/vim-galore#handling-backup-swap-undo-and-viminfo-files
