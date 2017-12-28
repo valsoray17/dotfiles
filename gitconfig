@@ -1,15 +1,17 @@
 [credential]
-	helper = gnome-keyring
+    helper = libsecret
 [core]
-	autocrlf = input
-[user]
-	email = yaroslav.sapozhnik@gmail.com
-	name = Yaroslav Sapozhnyk
+    autocrlf = input
 [alias]
-	co = checkout
-	ci = commit
-	st = status
-	br = branch
-	lol = log --graph --decorate --oneline
-	unstage = reset HEAD --
-	last = log -1 HEAD
+    co = checkout
+    ci = commit
+    amend = commit --amend
+    st = status
+    br = branch
+    lol = log --graph --decorate --oneline
+    unstage = reset HEAD --
+    last = log -1 HEAD
+    a = add
+    purr = pull --rebase
+[include]
+    path = ~/.gitconfig_local
