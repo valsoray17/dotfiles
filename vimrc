@@ -43,9 +43,16 @@ else
   let &listchars = 'tab:> ,extends:>,precedes:<,nbsp:.'
 endif
 
-set runtimepath^=~/.vim/bundle/lightline.vim
-set noshowmode
-set ttimeoutlen=0
+" Lightline Stuff
+set runtimepath^=~/.vim/bundle/lightline.vim " Include ligtline plugin
+set noshowmode " Don't show the current mode in Vim (lighline already show the mode) 
+set ttimeoutlen=0 " The time in milliseconds that is waited for a key code or mapped key sequence to complete
+
+" Navigate buffer list
+nnoremap <silent> [b :brevious
+nnoremap <silent> ]b :bnext
+nnoremap <silent> [B :bfirst
+nnoremap <silent> ]B :blast
 
 " Put all temporary files under the same directory.
 " https://github.com/mhinz/vim-galore#handling-backup-swap-undo-and-viminfo-files
