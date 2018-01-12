@@ -43,7 +43,7 @@ bindsym $mod+Return exec --no-startup-id urxvt256c
 
 # start a browser
 bindsym $mod+F2 exec $browser
-bindsym $mod+F3 exec firefox
+bindsym $mod+F3 exec GDK_CORE_DEVICE_EVENTS=1 firefox
 
 # start a calculator
 bindsym $mod+F4 exec $calc
