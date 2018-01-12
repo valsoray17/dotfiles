@@ -31,8 +31,16 @@ stty -ixon
 export M2_HOME=/opt/apache/apache-maven-3.5.0
 export M2=$M2_HOME/bin
 mvnp(){
-	mvn ${@%${!#}} -pl ${!#} -am
+    mvn ${@%${!#}} -pl ${!#} -am
 };
+
+mvn-install-module(){
+    mvnp install -DskipTests -P $1 $2
+}
+
+mvn-test-module(){
+    mvn test -P $1 -pl $2
+}
 
 #Spring Stuff
 export SPRING_HOME=/opt/spring/spring-2.0.0.BUILD-SNAPSHOT
