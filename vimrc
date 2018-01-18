@@ -57,14 +57,4 @@ nnoremap <silent> ]B :blast<CR>
 " Tab completion behavior
 set wildmode=longest,list   " Autocomplete the text (like bash behavior)
 
-" Put all temporary files under the same directory.
-" https://github.com/mhinz/vim-galore#handling-backup-swap-undo-and-viminfo-files
-"set backup
-"set backupdir   =$HOME/.vim/files/backup/
-"set backupext   =-vimbackup
-"set backupskip  =
-"set directory   =$HOME/.vim/files/swap//
-"set updatecount =100
-"set undofile
-"set undodir     =$HOME/.vim/files/undo/
-"set viminfo     ='100,n$HOME/.vim/files/info/viminfo
+set history=200             " Command history entries value
