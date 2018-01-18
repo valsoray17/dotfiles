@@ -53,6 +53,7 @@ export PATH=$PATH:$HOME/bin:$M2:$SPRING_BIN
 alias upgrade='sudo dnf upgrade --refresh'
 alias matrix='cmatrix -abC white'
 alias space='du -hsx * | sort -rh | head -10'
+alias screen='import ~/tmp/$(date +%F_%H%M%S_%N).png'
 # Git Aliases
 alias gc='git commit'
 alias gca='git commit --amend'
