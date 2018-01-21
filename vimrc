@@ -54,6 +54,10 @@ nnoremap <silent> ]b :bnext<CR>
 nnoremap <silent> [B :bfirst<CR>
 nnoremap <silent> ]B :blast<CR>
 
+" Alternative n/N - search forward/backward and display the line at the center of the screen
+nnoremap <Leader>n nzz
+nnoremap <Leader>N Nzz
+
 " Tab completion behavior
 set wildmode=longest,list   " Autocomplete the text (like bash behavior)
 
