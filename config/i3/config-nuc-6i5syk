@@ -290,4 +290,5 @@ assign [instance="skype"] $ws10
 gaps inner 12
 smart_gaps on
 
-bindsym Print exec ksnapshot
+#bindsym Print exec "scrot -s '%Y-%m-%d_$wx$h.png' -e 'mv $f ~/tmp/'"
+bindsym --release Shift+Print exec "import /tmp/$(date +%F_%H%M%S_%N).png"
