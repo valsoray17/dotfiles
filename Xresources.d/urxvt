@@ -25,7 +25,7 @@ URxvt*termName: xterm-256color
 
 ! Font settings
 !URxvt.font: xft:DejaVu Sans Mono:medium:size=9:antialias=true:hinting=true
-URxvt.font: xft:Ubuntu Mono:medium:size=11:antialias=true:hinting=true
+URxvt.font: xft:Ubuntu Mono:medium:pixelsize=14:antialias=true:hinting=true
 !URxvt.font: xft:Monoid:medium:pixelsize=12:style=Retina:antialias=true:hinting=true
 !URxvt.font: xft:Envy Code R:regular:pixelsize=14:antialias=true:hinting=true
 !URxvt.font: xft:M+ 1m:regular:pixelsize=14:antialias=true:hinting=true
