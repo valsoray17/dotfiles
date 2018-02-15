@@ -3,7 +3,7 @@
 #include "Xresources.d/rofi"
 
 Xft.dpi: 96
-!Xft.dpi: 144
+!Xft.dpi: 120
 Xft.antialias: true
 Xft.rgba: rgb
 Xft.autohint: 0
