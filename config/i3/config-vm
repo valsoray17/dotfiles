@@ -18,7 +18,7 @@ set $calc xcalc
 # is used in the bar {} block below.
 #font pango:monospace 8
 #font pango:System San Francisco Display 9.5
-font pango:Roboto Condensed 11
+font pango:Roboto Condensed 12
 #font xft:DejaVu Sans Mono 8
 #font pango:FontAwesome 8
 
