@@ -1,0 +1,12 @@
+#!/bin/sh
+xset r rate 200 40
+xsetroot -solid "#4A4747"
+setxkbmap -layout us,ua -option grp:shift_caps_toggle
+
+# load feh background (ideally this should be in i3 config)
+fehbg=$HOME/.fehbg
+[ -r "$fehbg" ] && . "$fehbg"
+
+# merge in local resources
+Xlocal=$HOME/.Xlocal
+[ -r "$Xlocal" ] && xrdb -merge "$Xlocal"

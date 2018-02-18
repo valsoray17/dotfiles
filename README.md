@@ -23,6 +23,8 @@ Current dotfiles cover Fedora distro
 * Repos
  * [RPM Fusion](http://rpmfusion.org/Configuration/)
 
+## Font DPI
+Possible values are: 96, 120, 144. Asus monitor has 93
 * Fontconfig
 ```xml
 <?xml version="1.0"?><!DOCTYPE fontconfig SYSTEM "fonts.dtd">
