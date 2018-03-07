@@ -71,7 +71,7 @@ disk "/home" {
 }
 
 cpu_temperature 0 {
-	format = " %degrees °C"
+	format = " %degrees °C"
 	#NUC6i5SYK
 	path = "/sys/devices/platform/coretemp.0/hwmon/hwmon2/temp1_input"
 }
