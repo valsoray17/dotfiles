@@ -2,6 +2,7 @@
     helper = libsecret
 [core]
     autocrlf = input
+    excludesfile = ~/.gitignore_global
 [alias]
     co = checkout
     ci = commit
