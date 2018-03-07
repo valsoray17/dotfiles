@@ -1,84 +1,84 @@
 .quote {
-        color: #232323;
+    color: #232323;
 }
 
 body {
-	background-color: #232323;
+    background-color: #232323;
 }
 
 div[class^="books"], div [class*="books"] {
-	font-family: 'Droid Sans', "Lucida Grande", "Lucida Sans", "Liberation Sans", sans-serif, "Font Awesome 5 Free Regular" !important;
-	font-size: 1em !important;
+    font-family: 'Droid Sans', "Lucida Grande", "Lucida Sans", "Liberation Sans", sans-serif, "Font Awesome 5 Free Solid", "Font Awesome 5 Brands" !important;
+    font-size: 0.9em !important;
 }
 
 a, a:link {
-	   color: #9eb2cb !important;
-	   text-decoration: none !important;
+    color: #9eb2cb !important;
+    text-decoration: none !important;
 }
 
 a:hover {
-	color: #cae5ff !important;
-	text-decoration: none !important;
+    color: #cae5ff !important;
+    text-decoration: none !important;
 }
 
 li {
-	list-style: none;
+    list-style: none;
 }
 
 ul {
-	text-align: left !important;
-	padding-left: 13px !important;
+    text-align: left !important;
+    padding-left: 13px !important;
 }
 
 ul li {
-	list-style: none;
-	display: inline;
-	text-align: left;
+    list-style: none;
+    display: inline;
+    text-align: left;
 }
 
 ul li:after {
-	color: #a06e6e !important;
-	content: " //" !important;
+    color: #a06e6e !important;
+    content: " //" !important;
 }
 
 ul li:last-child:after {
-	content: "" !important;
+    content: "" !important;
 }
 
 div.books {
-	margin-left: 30% !important;
-	text-align: left !important;
-	padding-left: 0px;
-	display: table;
+    margin-left: 30% !important;
+    text-align: left !important;
+    padding-left: 0px;
+    display: table;
 
-	position: absolute;
-	left: 0px;
-	top: 30%;
+    position: absolute;
+    left: 0px;
+    top: 30%;
 }
 
 div.books2 {
-	margin-right: 70% !important;
-	text-align: right !important;
-	color: #eeeeee;
-	float: right;
-	display: table;
+    margin-right: 70% !important;
+    text-align: right !important;
+    color: #eeeeee;
+    float: right;
+    display: table;
 
-	position: absolute;
-	right: 0px;
-	top: 30%;
+    position: absolute;
+    right: 0px;
+    top: 30%;
 }
 
 ul li#books2 {
-	float: right !important;
+    float: right !important;
 }
 
 ul li#books2:after {
-	content: "" !important;
+    content: "" !important;
 }
 
 .mascot {
-	width: 30%;
-	position: absolute;
-	right: 0px;
-	bottom: 0px;
+    width: 30%;
+    position: absolute;
+    right: 0px;
+    bottom: 0px;
 }
