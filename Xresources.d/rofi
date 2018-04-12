@@ -1,5 +1,5 @@
 ! Rofi related configs
-rofi.lines: 5
+rofi.lines: 10
 rofi.location: 2
 rofi.separator-style: solid
 rofi.width: 30
