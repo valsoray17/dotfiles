@@ -16,6 +16,7 @@ general {
 
 #order += "ipv6"
 order += "disk /"
+order += "disk /opt"
 order += "disk /home"
 #order += "run_watch DHCP"
 #order += "run_watch VPN"
@@ -68,7 +69,11 @@ load {
 }
 
 disk "/" {
-        format = " %avail"
+        format = " / %avail"
+}
+
+disk "/opt" {
+        format = " /opt %avail"
 }
 
 disk "/home" {
