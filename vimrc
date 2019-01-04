@@ -62,3 +62,8 @@ nnoremap <Leader>N Nzz
 set wildmode=longest,list   " Autocomplete the text (like bash behavior)
 
 set history=200             " Command history entries value
+let g:lightline = {
+      \ 'active': {
+      \   'left': [ [ 'mode', 'paste' ], [ 'readonly', 'relativepath', 'modified' ] ]
+      \ }
+      \ }
