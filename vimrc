@@ -23,6 +23,7 @@ set display     =lastline  " Show as much as possible of the last line.
 set showmode               " Show current mode in command-line.
 set showcmd                " Show already typed keys when more are expected.
 
+set ignorecase             " do case insensitive search
 set incsearch              " Highlight while searching with / or ?.
 set hlsearch               " Keep matches highlighted.
 
@@ -35,6 +36,7 @@ set splitright             " Open new windows right of the current window.
 set wrapscan               " Searches wrap around end-of-file.
 set report      =0         " Always report changed lines.
 set synmaxcol   =200       " Only highlight the first 200 columns.
+set number                 " display line number
 
 "set list                   " Show non-printable characters.
 "if has('multi_byte') && &encoding ==# 'utf-8'
@@ -67,3 +69,16 @@ let g:lightline = {
       \   'left': [ [ 'mode', 'paste' ], [ 'readonly', 'relativepath', 'modified' ] ]
       \ }
       \ }
+
+" :w!! to save with sudo
+ca w!! w !sudo tee >/dev/null "%"
+
+set termguicolors     " enable true colors support
+let ayucolor="dark"   " for dark version of theme
+colorscheme ayu
+
+set runtimepath^=~/.vim/bundle/minimap.vim " Include Minimap plugin
+let g:minimap_width = 10
+
+set runtimepath^=~/.vim/bundle/rust.vim
+

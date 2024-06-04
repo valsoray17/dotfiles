@@ -12,5 +12,19 @@
     last = log -1 HEAD
     a = add
     purr = pull --rebase
+    m = checkout master
+    ma = checkout main
+    ls = show --stat --oneline
+    rollback = reset --soft HEAD~1
+    done = "!f() { git checkout master && git branch -d @{-1}; }; f"
+    # Delete all local branches but master and the current one, only if they are fully merged with master.
+    br-delete-useless = "!f(){\
+        git branch | grep -v "master" | grep -v ^* | xargs git branch -d;\
+    }; f"
+    # Delete all local branches but master and the current one.
+    br-delete-useless-force = "!f(){\
+        git branch | grep -v "master" | grep -v ^* | xargs git branch -D;\
+    }; f"
+
 [include]
     path = ~/.gitconfig_local
