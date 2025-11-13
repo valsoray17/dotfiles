@@ -28,3 +28,6 @@
 
 [include]
     path = ~/.gitconfig_local
+[user]
+	email = yaroslav.sapozhnik@gmail.com
+	name = Yaroslav Sapozhnyk

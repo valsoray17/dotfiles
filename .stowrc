@@ -1,0 +1,4 @@
+--ignore='\.DS_Store'
+--ignore='mimeapps.list'
+--ignore='resources'
+--ignore='startpage'

@@ -27,39 +27,35 @@ shopt -s direxpand
 
 stty -ixon
 
-#Maven Stuff
-export M2_HOME=/opt/apache/apache-maven-3.5.0
-export M2=$M2_HOME/bin
-mvnp(){
-    mvn ${@%${!#}} -pl ${!#} -am
-};
+# Uncomment the following line if you don't like systemctl's auto-paging feature:
+# export SYSTEMD_PAGER=
 
-mvn-install-module(){
-    mvnp install -DskipTests -P $1 $2
-}
+# User specific aliases and functions
+if [ -d ~/.bashrc.d ]; then
+    for rc in ~/.bashrc.d/*; do
+        if [ -f "$rc" ]; then
+            . "$rc"
+        fi
+    done
+fi
+unset rc
 
-mvn-test-module(){
-    mvn test -P $1 -pl $2
-}
+. "$HOME/.cargo/env"
 
-#Spring Stuff
-export SPRING_HOME=/opt/spring/spring-2.0.0.BUILD-SNAPSHOT
-export SPRING_BIN=$SPRING_HOME/bin
-
-#Export PATH
-export PATH=$PATH:$HOME/bin:$M2:$SPRING_BIN
+eval "$(fzf --bash)"
+eval "$(zoxide init bash)"
+export FZF_DEFAULT_OPTS=" \
+--color=bg+:#313244,bg:#1E1E2E,spinner:#F5E0DC,hl:#F38BA8 \
+--color=fg:#CDD6F4,header:#F38BA8,info:#CBA6F7,pointer:#F5E0DC \
+--color=marker:#B4BEFE,fg+:#CDD6F4,prompt:#CBA6F7,hl+:#F38BA8 \
+--color=selected-bg:#45475A \
+--color=border:#6C7086,label:#CDD6F4"
 
 # ALIASES
+alias open='xdg-open'
+alias l='ll'
 alias upgrade='sudo dnf upgrade --refresh'
 alias matrix='cmatrix -abC white'
 alias space='du -hsx * | sort -rh | head -10'
+# old X11 stuff
 alias screen='import ~/tmp/$(date +%F_%H%M%S_%N).png'
-# Git Aliases
-alias gc='git commit'
-alias gca='git commit --amend'
-alias gp='git push'
-alias ga='git add'
-alias gbr='git branch'
-alias gd='git diff'
-alias gdc='git diff --cached'
-alias gst='git status'
