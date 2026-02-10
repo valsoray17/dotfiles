@@ -74,8 +74,7 @@ let g:lightline = {
 ca w!! w !sudo tee >/dev/null "%"
 
 set termguicolors     " enable true colors support
-" let ayucolor="dark"   " for dark version of theme
-" colorscheme ayu
+colorscheme catppuccin_mocha
 
 set runtimepath^=~/.vim/bundle/minimap.vim " Include Minimap plugin
 let g:minimap_width = 10

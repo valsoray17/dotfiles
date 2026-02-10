@@ -17,6 +17,7 @@
     ls = show --stat --oneline
     rollback = reset --soft HEAD~1
     done = "!f() { git checkout master && git branch -d @{-1}; }; f"
+    donen = "!f() { git checkout main && git branch -d @{-1}; }; f"
     # Delete all local branches but master and the current one, only if they are fully merged with master.
     br-delete-useless = "!f(){\
         git branch | grep -v "master" | grep -v ^* | xargs git branch -d;\
