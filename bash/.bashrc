@@ -8,15 +8,21 @@ fi
 # Uncomment the following line if you don't like systemctl's auto-paging feature:
 # export SYSTEMD_PAGER=
 
-# User specific aliases and functions
-source /usr/share/git-core/contrib/completion/git-prompt.sh
+# Load Git prompt script if available
+[ -r /usr/share/git-core/contrib/completion/git-prompt.sh ] && . /usr/share/git-core/contrib/completion/git-prompt.sh
+
+# If the function __git_ps1 is NOT defined, create a dummy
+if ! type __git_ps1 > /dev/null 2>&1 ; then
+    __git_ps1() { echo ; }
+fi
 
 #PS1='[\u@\h \W]$(__git_ps1 " (%s)")\$ '  # Default
 GIT_PS1_SHOWCOLORHINTS=1
 GIT_PS1_SHOWUNTRACKEDFILES=1
 GIT_PS1_SHOWDIRTYSTATE=1
 
-PROMPT_COMMAND='__git_ps1 "[\[\e[0;33m\]\u\[\e[0;m\]@\h \W"] "\\\$ "'
+#PROMPT_COMMAND='__git_ps1 "[\[\e[0;33m\]\u\[\e[0;m\]@\h \W"] "\\\$ "'
+PROMPT_COMMAND='__git_ps1 "\[\e[0;33m\]\u\[\e[0;m\]@\h \[\e[1;34m\]\W\[\e[0;m\]" " ❯ " " on  %s"'
 
 if [ -f ~/.bashrc_local ]; then
 	. ~/.bashrc_local
@@ -59,3 +65,5 @@ alias matrix='cmatrix -abC white'
 alias space='du -hsx * | sort -rh | head -10'
 # old X11 stuff
 alias screen='import ~/tmp/$(date +%F_%H%M%S_%N).png'
+
+export PATH="$HOME/.local/bin:$PATH"
