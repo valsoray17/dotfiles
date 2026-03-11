@@ -32,3 +32,5 @@
 [user]
 	email = yaroslav.sapozhnik@gmail.com
 	name = Yaroslav Sapozhnyk
+[credential]
+	helper = /usr/libexec/git-core/git-credential-libsecret
