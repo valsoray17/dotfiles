@@ -1,9 +1,8 @@
 require("config.lazy")
+-- vim.lsp is built into Neovim, so it can be loaded directly without waiting for plugins
 require("config.lsp")
-require("catppuccin").setup()
-require('lualine').setup()
 
---set the colorscheme to it!
+-- Set the active colorscheme (swap this line to switch themes)
 vim.cmd.colorscheme "catppuccin"
 
 vim.opt.expandtab = true
