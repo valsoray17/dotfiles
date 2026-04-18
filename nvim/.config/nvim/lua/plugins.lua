@@ -16,6 +16,17 @@ return {
   },
   { 'neovim/nvim-lspconfig' },
   {
+    'nvim-treesitter/nvim-treesitter',
+    version = '*',
+    build = ':TSUpdate',
+    config = function()
+      require('nvim-treesitter.configs').setup({
+        ensure_installed = { 'go', 'lua', 'json', 'yaml', 'toml', 'bash', 'markdown', 'javascript', 'typescript', 'tsx' },
+        highlight = { enable = true },
+      })
+    end,
+  },
+  {
     "saghen/blink.cmp",
     version = "*",
     opts = {
