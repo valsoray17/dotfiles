@@ -1,0 +1,15 @@
+[Unit]
+Description=Idle manager for Wayland
+Documentation=man:swayidle(1)
+PartOf=niri.service
+After=niri.service
+
+[Service]
+Type=simple
+ExecStart=/usr/bin/swayidle -w \
+  timeout 900 'systemctl suspend' \
+  before-sleep 'swaylock --daemonize'
+Restart=on-failure
+
+[Install]
+WantedBy=niri.service

@@ -1,0 +1,13 @@
+[Unit]
+Description=Wallpaper renderer (swaybg)
+PartOf=niri.service
+After=niri.service
+Requisite=niri.service
+
+[Service]
+EnvironmentFile=%h/.config/swaybg/env
+ExecStart=/usr/bin/swaybg -m ${MODE} -i ${WALLPAPER}
+Restart=on-failure
+
+[Install]
+WantedBy=niri.service

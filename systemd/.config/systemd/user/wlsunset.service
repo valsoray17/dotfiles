@@ -1,0 +1,11 @@
+[Unit]
+Description=Wayland color temperature adjustment (wlsunset)
+PartOf=niri.service
+After=niri.service
+
+[Service]
+ExecStart=/usr/bin/wlsunset -t 4500 -l 40.7 -L -74.0
+Restart=on-failure
+
+[Install]
+WantedBy=niri.service
