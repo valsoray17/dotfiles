@@ -33,6 +33,7 @@ return {
       keymap = {
         preset = "none",
         ["<C-Space>"] = { "show", "fallback" },
+        ["<C-k>"] = { "show_documentation", "hide_documentation" },
         ["<C-e>"] = { "hide" },
         ["<C-n>"] = { "select_next", "fallback" },
         ["<C-p>"] = { "select_prev", "fallback" },
@@ -42,6 +43,10 @@ return {
         trigger = {
           show_on_keyword = false,
           show_on_trigger_character = false,
+        },
+        documentation = {
+          auto_show = false,
+          window = { border = "rounded" },
         },
       },
       sources = {
