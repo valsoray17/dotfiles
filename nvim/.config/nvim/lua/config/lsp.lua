@@ -22,6 +22,9 @@ vim.lsp.enable('zls')
 vim.lsp.config('ts_ls', {})
 vim.lsp.enable('ts_ls')
 
+vim.lsp.config('marksman', {})
+vim.lsp.enable('marksman')
+
 -- LSP keymaps (set when an LSP attaches to a buffer)
 vim.api.nvim_create_autocmd('LspAttach', {
   callback = function(args)
@@ -36,7 +39,7 @@ vim.api.nvim_create_autocmd('LspAttach', {
         symbol_filter = { "Function", "Method", "Struct", "Enum", "Interface", "Constant" },
       })
     end, opts)
-    vim.keymap.set('n', '<leader>sS', fzf.lsp_workspace_symbols, opts)
+    vim.keymap.set('n', '<leader>sS', fzf.lsp_live_workspace_symbols, opts)
     vim.keymap.set('n', '<leader>sd', fzf.diagnostics_document, opts)
     vim.keymap.set('n', '<leader>sD', function()
       fzf.diagnostics_workspace({ severity_only = vim.diagnostic.severity.ERROR })
@@ -45,6 +48,12 @@ vim.api.nvim_create_autocmd('LspAttach', {
     vim.keymap.set('n', '<leader>rn', vim.lsp.buf.rename, opts)
     vim.keymap.set('n', '<leader>ca', vim.lsp.buf.code_action, opts)
     vim.keymap.set('n', '<leader>lf', function() vim.lsp.buf.format({ async = true }) end, opts)
+    vim.keymap.set('n', '<leader>lo', function()
+      vim.lsp.buf.code_action({
+        context = { only = { 'source.organizeImports' }, diagnostics = {} },
+        apply = true,
+      })
+    end, opts)
     vim.keymap.set('n', '<leader>lh', function() vim.lsp.inlay_hint.enable(not vim.lsp.inlay_hint.is_enabled()) end, opts)
     vim.keymap.set('n', '<leader>ls', vim.lsp.buf.signature_help, opts)
     vim.keymap.set('i', '<C-s>', vim.lsp.buf.signature_help, opts)
