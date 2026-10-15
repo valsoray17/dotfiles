@@ -1,0 +1,9 @@
+# theme = tokyonight_night
+theme = Catppuccin Mocha
+window-theme = system
+font-size = 13
+cursor-text = 11101A
+# macos-icon = xray
+# cursor-invert-fg-bg = true
+keybind = global:opt+grave_accent=toggle_quick_terminal
+macos-option-as-alt = true

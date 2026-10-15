@@ -1,22 +1,35 @@
 # .bashrc
 
-# Source global definitions
-if [ -f /etc/bashrc ]; then
-	. /etc/bashrc
+export EDITOR=nvim
+export VISUAL=nvim
+export HISTSIZE=100000
+export HISTCONTROL=ignoreboth:erasedups
+export CLICOLOR=1
+
+#Expand directory variables
+shopt -s direxpand
+
+stty -ixon
+
+# OS specific config (bash-darwin / bash-linux stow packages) and other drop-ins.
+# Loaded before the prompt setup since darwin.sh / linux.sh provide __git_ps1.
+if [ -d ~/.bashrc.d ]; then
+    for rc in ~/.bashrc.d/*; do
+        [ -f "$rc" ] && . "$rc"
+    done
 fi
+unset rc
 
-# Uncomment the following line if you don't like systemctl's auto-paging feature:
-# export SYSTEMD_PAGER=
-
-# Load Git prompt script if available
-[ -r /usr/share/git-core/contrib/completion/git-prompt.sh ] && . /usr/share/git-core/contrib/completion/git-prompt.sh
+alias kc="kubectl"
+alias tg="terragrunt"
+alias space='du -hsx * | sort -rh | head -10'
+complete -F __start_kubectl kc
 
 # If the function __git_ps1 is NOT defined, create a dummy
 if ! type __git_ps1 > /dev/null 2>&1 ; then
     __git_ps1() { echo ; }
 fi
 
-#PS1='[\u@\h \W]$(__git_ps1 " (%s)")\$ '  # Default
 GIT_PS1_SHOWCOLORHINTS=1
 GIT_PS1_SHOWUNTRACKEDFILES=1
 GIT_PS1_SHOWDIRTYSTATE=1
@@ -24,34 +37,8 @@ GIT_PS1_SHOWDIRTYSTATE=1
 #PROMPT_COMMAND='__git_ps1 "[\[\e[0;33m\]\u\[\e[0;m\]@\h \W"] "\\\$ "'
 PROMPT_COMMAND='__git_ps1 "\[\e[0;33m\]\u\[\e[0;m\]@\h \[\e[1;34m\]\W\[\e[0;m\]" " ❯ " " on  %s"'
 
-if [ -f ~/.bashrc_local ]; then
-	. ~/.bashrc_local
-fi
-
-#Expand directory variables
-shopt -s direxpand
-
-stty -ixon
-
-# Uncomment the following line if you don't like systemctl's auto-paging feature:
-# export SYSTEMD_PAGER=
-export EDITOR=nvim
-export VISUAL=nvim
-
-# User specific aliases and functions
-if [ -d ~/.bashrc.d ]; then
-    for rc in ~/.bashrc.d/*; do
-        if [ -f "$rc" ]; then
-            . "$rc"
-        fi
-    done
-fi
-unset rc
-
-. "$HOME/.cargo/env"
-
-eval "$(fzf --bash)"
-eval "$(zoxide init bash)"
+command -v fzf > /dev/null && eval "$(fzf --bash)"
+command -v zoxide > /dev/null && eval "$(zoxide init bash)"
 export FZF_DEFAULT_OPTS=" \
 --color=bg+:#313244,bg:#1E1E2E,spinner:#F5E0DC,hl:#F38BA8 \
 --color=fg:#CDD6F4,header:#F38BA8,info:#CBA6F7,pointer:#F5E0DC \
@@ -59,13 +46,26 @@ export FZF_DEFAULT_OPTS=" \
 --color=selected-bg:#45475A \
 --color=border:#6C7086,label:#CDD6F4"
 
-# ALIASES
-alias open='xdg-open'
-alias l='ll'
-alias upgrade='sudo dnf upgrade --refresh'
-alias matrix='cmatrix -abC white'
-alias space='du -hsx * | sort -rh | head -10'
-# old X11 stuff
-alias screen='import ~/tmp/$(date +%F_%H%M%S_%N).png'
+###########################################################
+## Stolen from https://github.com/robbyrussell/oh-my-zsh ##
+###########################################################
 
-export PATH="$HOME/.local/bin:$PATH"
+# Outputs the name of the current branch
+# Usage example: git pull origin $(git_current_branch)
+# Using '--quiet' with 'symbolic-ref' will not cause a fatal error (128) if
+# it's not a symbolic ref, but in a Git repo.
+function git_current_branch() {
+  local ref
+  ref=$(command git symbolic-ref --quiet HEAD 2> /dev/null)
+  local ret=$?
+  if [[ $ret != 0 ]]; then
+    [[ $ret == 128 ]] && return  # no git repo.
+    ref=$(command git rev-parse --short HEAD 2> /dev/null) || return
+  fi
+  echo ${ref#refs/heads/}
+}
+
+alias pushbr='git push -u origin $(git_current_branch)'
+
+# Machine specific config (not in dotfiles), sourced last so it can override anything above
+[ -f ~/.bashrc_local ] && . ~/.bashrc_local
