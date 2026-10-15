@@ -4,7 +4,7 @@
 [ -r "$HOMEBREW_PREFIX/etc/profile.d/bash_completion.sh" ] && . "$HOMEBREW_PREFIX/etc/profile.d/bash_completion.sh"
 [ -r "$HOMEBREW_PREFIX/etc/bash_completion.d/git-completion.bash" ] && . "$HOMEBREW_PREFIX/etc/bash_completion.d/git-completion.bash"
 [ -r "$HOMEBREW_PREFIX/etc/bash_completion.d/git-prompt.sh" ] && . "$HOMEBREW_PREFIX/etc/bash_completion.d/git-prompt.sh"
-[ -f "$HOME/Library/google-cloud-sdk/completion.bash.inc" ] && . "$HOME/Library/google-cloud-sdk/completion.bash.inc"
+[ -f "$HOMEBREW_PREFIX/share/google-cloud-sdk/completion.bash.inc" ] && . "$HOMEBREW_PREFIX/share/google-cloud-sdk/completion.bash.inc"
 [ -f /usr/local/etc/profile.d/z.sh ] && . /usr/local/etc/profile.d/z.sh
 
 alias ll='ls -lG'
